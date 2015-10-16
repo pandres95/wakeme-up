@@ -1,6 +1,6 @@
 {
   "name": "wakeme-up",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wakes you up with Radioacktiva",
   "main": "index.js",
   "scripts": {},
@@ -19,6 +19,6 @@
   },
   "devDependencies": {},
   "bin": {
-    "wakeme-up": "wakeup.js"
+    "wakeup": "wakeup.js"
   }
 }

@@ -6,7 +6,7 @@ var open    = require('open')
 ,   cron    = require('node-schedule');
 
 program
-    .version('0.0.1')
+    .version('1.0.1')
     .usage('<hour>')
     .option('-p --player', 'Player')
 .action(function (hour, player) {
