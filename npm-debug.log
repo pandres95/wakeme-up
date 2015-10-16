@@ -1,0 +1,1029 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '-g',
+1 verbose cli   'wakeme-up' ]
+2 info using npm@2.14.3
+3 info using node@v4.0.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'wakeme-up', null ]
+7 verbose cache add spec wakeme-up
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'wakeme-up',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'wakeme-up',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed wakeme-up@*
+10 verbose addNamed "*" is a valid semver range for wakeme-up
+11 silly addNameRange { name: 'wakeme-up', range: '*', hasData: false }
+12 silly mapToRegistry name wakeme-up
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://registry.npmjs.org/
+15 silly mapToRegistry uri http://registry.npmjs.org/wakeme-up
+16 verbose addNameRange registry:http://registry.npmjs.org/wakeme-up not in flight; fetching
+17 verbose request uri http://registry.npmjs.org/wakeme-up
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:54:39 AM
+20 verbose request using bearer token for auth
+21 verbose request id 335a36946aee7b17
+22 http request GET http://registry.npmjs.org/wakeme-up
+23 http 200 http://registry.npmjs.org/wakeme-up
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"7FJDI8FM14JKG0PYWABHC8BI8"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '2455',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Fri, 16 Oct 2015 07:54:39 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-sjc3129-SJC',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1444982079.523107,VS0,VE89',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving wakeme-up to /Users/pandres95/.npm/registry.npmjs.org/wakeme-up/.cache.json
+26 silly addNameRange number 2 { name: 'wakeme-up', range: '*', hasData: true }
+27 silly addNameRange versions [ 'wakeme-up', [ '1.0.0', '1.0.1' ] ]
+28 silly addNamed wakeme-up@1.0.1
+29 verbose addNamed "1.0.1" is a plain semver version for wakeme-up
+30 silly cache afterAdd wakeme-up@1.0.1
+31 verbose afterAdd /Users/pandres95/.npm/wakeme-up/1.0.1/package/package.json not in flight; writing
+32 verbose afterAdd /Users/pandres95/.npm/wakeme-up/1.0.1/package/package.json written
+33 silly install resolved [ { name: 'wakeme-up',
+33 silly install resolved     version: '1.0.1',
+33 silly install resolved     description: 'Wakes you up with Radioacktiva',
+33 silly install resolved     main: 'index.js',
+33 silly install resolved     scripts: {},
+33 silly install resolved     keywords: [ 'wakeup', 'cron', 'radio' ],
+33 silly install resolved     author:
+33 silly install resolved      { name: 'Pablo Andrés Dorado Suárez',
+33 silly install resolved        email: 'pandres95@gentebool.com' },
+33 silly install resolved     license: 'ISC',
+33 silly install resolved     dependencies:
+33 silly install resolved      { commander: '^2.9.0',
+33 silly install resolved        daemon: '^1.1.0',
+33 silly install resolved        'node-schedule': '^0.2.9',
+33 silly install resolved        open: '0.0.5' },
+33 silly install resolved     devDependencies: {},
+33 silly install resolved     bin: { wakeup: 'wakeup.js' },
+33 silly install resolved     readme: '# WakeMe Up!\n\nSmall utility to open a webpage of your preference to wake you up by hearing a radio station. Yes, I choose Radioacktiva.\n',
+33 silly install resolved     readmeFilename: 'README.md',
+33 silly install resolved     gitHead: 'b32991f523a52cc6fd4472605b1542be5b7e7c26',
+33 silly install resolved     _id: 'wakeme-up@1.0.1',
+33 silly install resolved     _shasum: '2cde7c31de3df3173183935afb1ffbe9db30ea10',
+33 silly install resolved     _from: 'wakeme-up@*' } ]
+34 info install wakeme-up@1.0.1 into /usr/local/lib
+35 info installOne wakeme-up@1.0.1
+36 verbose installOne of wakeme-up to /usr/local/lib not in flight; installing
+37 verbose lock using /Users/pandres95/.npm/_locks/wakeme-up-d45b5b8eaf32235b.lock for /usr/local/lib/node_modules/wakeme-up
+38 silly install write writing wakeme-up 1.0.1 to /usr/local/lib/node_modules/wakeme-up
+39 verbose unbuild lib/node_modules/wakeme-up
+40 silly gentlyRm /usr/local/lib/node_modules/wakeme-up is being purged from base /usr/local
+41 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up
+42 verbose tar unpack /Users/pandres95/.npm/wakeme-up/1.0.1/package.tgz
+43 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up
+44 silly gentlyRm /usr/local/lib/node_modules/wakeme-up is being purged
+45 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm extractEntry .npmignore
+49 silly gunzTarPerm extractEntry README.md
+50 silly gunzTarPerm extractEntry index.js
+51 silly gunzTarPerm extractEntry bin/wakeup.js
+52 verbose write writing to /usr/local/lib/node_modules/wakeme-up/package.json
+53 info preinstall wakeme-up@1.0.1
+54 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/package.json
+55 silly prepareForInstallMany adding commander@^2.9.0 from wakeme-up dependencies
+56 silly prepareForInstallMany adding daemon@^1.1.0 from wakeme-up dependencies
+57 silly prepareForInstallMany adding node-schedule@^0.2.9 from wakeme-up dependencies
+58 silly prepareForInstallMany adding open@0.0.5 from wakeme-up dependencies
+59 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/package.json
+60 silly cache add args [ 'daemon@^1.1.0', null ]
+61 verbose cache add spec daemon@^1.1.0
+62 silly cache add parsed spec Result {
+62 silly cache add   raw: 'daemon@^1.1.0',
+62 silly cache add   scope: null,
+62 silly cache add   name: 'daemon',
+62 silly cache add   rawSpec: '^1.1.0',
+62 silly cache add   spec: '>=1.1.0 <2.0.0',
+62 silly cache add   type: 'range' }
+63 silly addNamed daemon@>=1.1.0 <2.0.0
+64 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for daemon
+65 silly addNameRange { name: 'daemon', range: '>=1.1.0 <2.0.0', hasData: false }
+66 silly mapToRegistry name daemon
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry http://registry.npmjs.org/
+69 silly mapToRegistry uri http://registry.npmjs.org/daemon
+70 verbose addNameRange registry:http://registry.npmjs.org/daemon not in flight; fetching
+71 silly cache add args [ 'node-schedule@^0.2.9', null ]
+72 verbose cache add spec node-schedule@^0.2.9
+73 silly cache add parsed spec Result {
+73 silly cache add   raw: 'node-schedule@^0.2.9',
+73 silly cache add   scope: null,
+73 silly cache add   name: 'node-schedule',
+73 silly cache add   rawSpec: '^0.2.9',
+73 silly cache add   spec: '>=0.2.9 <0.3.0',
+73 silly cache add   type: 'range' }
+74 silly addNamed node-schedule@>=0.2.9 <0.3.0
+75 verbose addNamed ">=0.2.9 <0.3.0" is a valid semver range for node-schedule
+76 silly addNameRange { name: 'node-schedule',
+76 silly addNameRange   range: '>=0.2.9 <0.3.0',
+76 silly addNameRange   hasData: false }
+77 silly mapToRegistry name node-schedule
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry http://registry.npmjs.org/
+80 silly mapToRegistry uri http://registry.npmjs.org/node-schedule
+81 verbose addNameRange registry:http://registry.npmjs.org/node-schedule not in flight; fetching
+82 silly cache add args [ 'open@0.0.5', null ]
+83 verbose cache add spec open@0.0.5
+84 silly cache add parsed spec Result {
+84 silly cache add   raw: 'open@0.0.5',
+84 silly cache add   scope: null,
+84 silly cache add   name: 'open',
+84 silly cache add   rawSpec: '0.0.5',
+84 silly cache add   spec: '0.0.5',
+84 silly cache add   type: 'version' }
+85 silly addNamed open@0.0.5
+86 verbose addNamed "0.0.5" is a plain semver version for open
+87 silly mapToRegistry name open
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry http://registry.npmjs.org/
+90 silly mapToRegistry uri http://registry.npmjs.org/open
+91 verbose addNameVersion registry:http://registry.npmjs.org/open not in flight; fetching
+92 silly cache add args [ 'commander@^2.9.0', null ]
+93 verbose cache add spec commander@^2.9.0
+94 silly cache add parsed spec Result {
+94 silly cache add   raw: 'commander@^2.9.0',
+94 silly cache add   scope: null,
+94 silly cache add   name: 'commander',
+94 silly cache add   rawSpec: '^2.9.0',
+94 silly cache add   spec: '>=2.9.0 <3.0.0',
+94 silly cache add   type: 'range' }
+95 silly addNamed commander@>=2.9.0 <3.0.0
+96 verbose addNamed ">=2.9.0 <3.0.0" is a valid semver range for commander
+97 silly addNameRange { name: 'commander', range: '>=2.9.0 <3.0.0', hasData: false }
+98 silly mapToRegistry name commander
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry http://registry.npmjs.org/
+101 silly mapToRegistry uri http://registry.npmjs.org/commander
+102 verbose addNameRange registry:http://registry.npmjs.org/commander not in flight; fetching
+103 verbose request uri http://registry.npmjs.org/commander
+104 verbose request no auth needed
+105 info attempt registry request try #1 at 2:54:39 AM
+106 verbose request using bearer token for auth
+107 verbose etag "2N2VNMJRVPYRKHWX83MMXGHBJ"
+108 http request GET http://registry.npmjs.org/commander
+109 verbose request uri http://registry.npmjs.org/open
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 2:54:39 AM
+112 verbose request using bearer token for auth
+113 verbose etag "BT5VSPUK994ES2WTZSHCY7NZV"
+114 http request GET http://registry.npmjs.org/open
+115 verbose request uri http://registry.npmjs.org/node-schedule
+116 verbose request no auth needed
+117 info attempt registry request try #1 at 2:54:39 AM
+118 verbose request using bearer token for auth
+119 verbose etag "325WL4KWXKBI2KYADMH0J1UIO"
+120 http request GET http://registry.npmjs.org/node-schedule
+121 verbose request uri http://registry.npmjs.org/daemon
+122 verbose request no auth needed
+123 info attempt registry request try #1 at 2:54:39 AM
+124 verbose request using bearer token for auth
+125 verbose etag "55LP86C88RUV29HX2KLXA8U4"
+126 http request GET http://registry.npmjs.org/daemon
+127 http 304 http://registry.npmjs.org/commander
+128 silly get cb [ 304,
+128 silly get   { 'cache-control': 'max-age=60',
+128 silly get     'accept-ranges': 'bytes',
+128 silly get     date: 'Fri, 16 Oct 2015 07:54:40 GMT',
+128 silly get     via: '1.1 varnish',
+128 silly get     connection: 'keep-alive',
+128 silly get     'x-served-by': 'cache-sjc3129-SJC',
+128 silly get     'x-cache': 'MISS',
+128 silly get     'x-cache-hits': '0',
+128 silly get     'x-timer': 'S1444982080.021299,VS0,VE83' } ]
+129 verbose etag http://registry.npmjs.org/commander from cache
+130 verbose get saving commander to /Users/pandres95/.npm/registry.npmjs.org/commander/.cache.json
+131 silly addNameRange number 2 { name: 'commander', range: '>=2.9.0 <3.0.0', hasData: true }
+132 silly addNameRange versions [ 'commander',
+132 silly addNameRange   [ '0.0.1',
+132 silly addNameRange     '0.0.3',
+132 silly addNameRange     '0.0.4',
+132 silly addNameRange     '0.0.5',
+132 silly addNameRange     '0.1.0',
+132 silly addNameRange     '0.2.0',
+132 silly addNameRange     '0.2.1',
+132 silly addNameRange     '0.3.0',
+132 silly addNameRange     '0.3.1',
+132 silly addNameRange     '0.3.2',
+132 silly addNameRange     '0.3.3',
+132 silly addNameRange     '0.4.0',
+132 silly addNameRange     '0.4.1',
+132 silly addNameRange     '0.4.2',
+132 silly addNameRange     '0.4.3',
+132 silly addNameRange     '0.5.0',
+132 silly addNameRange     '0.5.1',
+132 silly addNameRange     '0.6.0',
+132 silly addNameRange     '0.6.1',
+132 silly addNameRange     '0.5.2',
+132 silly addNameRange     '1.0.0',
+132 silly addNameRange     '1.0.1',
+132 silly addNameRange     '1.0.2',
+132 silly addNameRange     '1.0.3',
+132 silly addNameRange     '1.0.4',
+132 silly addNameRange     '1.0.5',
+132 silly addNameRange     '1.1.0',
+132 silly addNameRange     '1.1.1',
+132 silly addNameRange     '1.2.0',
+132 silly addNameRange     '1.3.0',
+132 silly addNameRange     '1.3.1',
+132 silly addNameRange     '1.3.2',
+132 silly addNameRange     '2.0.0',
+132 silly addNameRange     '2.1.0',
+132 silly addNameRange     '2.2.0',
+132 silly addNameRange     '2.3.0',
+132 silly addNameRange     '2.4.0',
+132 silly addNameRange     '2.5.0',
+132 silly addNameRange     '2.5.1',
+132 silly addNameRange     '2.6.0',
+132 silly addNameRange     '2.7.0',
+132 silly addNameRange     '2.7.1',
+132 silly addNameRange     '2.8.0',
+132 silly addNameRange     '2.8.1',
+132 silly addNameRange     '2.9.0' ] ]
+133 silly addNamed commander@2.9.0
+134 verbose addNamed "2.9.0" is a plain semver version for commander
+135 silly cache afterAdd commander@2.9.0
+136 verbose afterAdd /Users/pandres95/.npm/commander/2.9.0/package/package.json not in flight; writing
+137 verbose afterAdd /Users/pandres95/.npm/commander/2.9.0/package/package.json written
+138 http 304 http://registry.npmjs.org/open
+139 silly get cb [ 304,
+139 silly get   { 'cache-control': 'max-age=60',
+139 silly get     'accept-ranges': 'bytes',
+139 silly get     date: 'Fri, 16 Oct 2015 07:54:40 GMT',
+139 silly get     via: '1.1 varnish',
+139 silly get     connection: 'keep-alive',
+139 silly get     'x-served-by': 'cache-sjc3129-SJC',
+139 silly get     'x-cache': 'MISS',
+139 silly get     'x-cache-hits': '0',
+139 silly get     'x-timer': 'S1444982080.201661,VS0,VE35' } ]
+140 verbose etag http://registry.npmjs.org/open from cache
+141 verbose get saving open to /Users/pandres95/.npm/registry.npmjs.org/open/.cache.json
+142 silly cache afterAdd open@0.0.5
+143 verbose afterAdd /Users/pandres95/.npm/open/0.0.5/package/package.json not in flight; writing
+144 verbose afterAdd /Users/pandres95/.npm/open/0.0.5/package/package.json written
+145 http 304 http://registry.npmjs.org/daemon
+146 silly get cb [ 304,
+146 silly get   { 'cache-control': 'max-age=60',
+146 silly get     'accept-ranges': 'bytes',
+146 silly get     date: 'Fri, 16 Oct 2015 07:54:40 GMT',
+146 silly get     via: '1.1 varnish',
+146 silly get     connection: 'keep-alive',
+146 silly get     'x-served-by': 'cache-sjc3128-SJC',
+146 silly get     'x-cache': 'MISS',
+146 silly get     'x-cache-hits': '0',
+146 silly get     'x-timer': 'S1444982080.217544,VS0,VE38' } ]
+147 verbose etag http://registry.npmjs.org/daemon from cache
+148 verbose get saving daemon to /Users/pandres95/.npm/registry.npmjs.org/daemon/.cache.json
+149 silly addNameRange number 2 { name: 'daemon', range: '>=1.1.0 <2.0.0', hasData: true }
+150 silly addNameRange versions [ 'daemon',
+150 silly addNameRange   [ '0.1.0',
+150 silly addNameRange     '0.3.0',
+150 silly addNameRange     '0.3.2',
+150 silly addNameRange     '0.4.0',
+150 silly addNameRange     '0.4.1',
+150 silly addNameRange     '0.5.0',
+150 silly addNameRange     '0.5.1',
+150 silly addNameRange     '1.0.0',
+150 silly addNameRange     '1.1.0' ] ]
+151 silly addNamed daemon@1.1.0
+152 verbose addNamed "1.1.0" is a plain semver version for daemon
+153 silly cache afterAdd daemon@1.1.0
+154 verbose afterAdd /Users/pandres95/.npm/daemon/1.1.0/package/package.json not in flight; writing
+155 verbose afterAdd /Users/pandres95/.npm/daemon/1.1.0/package/package.json written
+156 http 304 http://registry.npmjs.org/node-schedule
+157 silly get cb [ 304,
+157 silly get   { 'cache-control': 'max-age=60',
+157 silly get     'accept-ranges': 'bytes',
+157 silly get     date: 'Fri, 16 Oct 2015 07:54:40 GMT',
+157 silly get     via: '1.1 varnish',
+157 silly get     connection: 'keep-alive',
+157 silly get     'x-served-by': 'cache-sjc3125-SJC',
+157 silly get     'x-cache': 'MISS',
+157 silly get     'x-cache-hits': '0',
+157 silly get     'x-timer': 'S1444982080.217020,VS0,VE91' } ]
+158 verbose etag http://registry.npmjs.org/node-schedule from cache
+159 verbose get saving node-schedule to /Users/pandres95/.npm/registry.npmjs.org/node-schedule/.cache.json
+160 silly addNameRange number 2 { name: 'node-schedule', range: '>=0.2.9 <0.3.0', hasData: true }
+161 silly addNameRange versions [ 'node-schedule',
+161 silly addNameRange   [ '0.1.0',
+161 silly addNameRange     '0.1.1',
+161 silly addNameRange     '0.1.2',
+161 silly addNameRange     '0.1.3',
+161 silly addNameRange     '0.1.4',
+161 silly addNameRange     '0.1.5',
+161 silly addNameRange     '0.1.6',
+161 silly addNameRange     '0.1.7',
+161 silly addNameRange     '0.1.8',
+161 silly addNameRange     '0.1.9',
+161 silly addNameRange     '0.1.10',
+161 silly addNameRange     '0.1.11',
+161 silly addNameRange     '0.1.12',
+161 silly addNameRange     '0.1.13',
+161 silly addNameRange     '0.1.15',
+161 silly addNameRange     '0.1.16',
+161 silly addNameRange     '0.2.0',
+161 silly addNameRange     '0.2.1',
+161 silly addNameRange     '0.2.3',
+161 silly addNameRange     '0.2.4',
+161 silly addNameRange     '0.2.5',
+161 silly addNameRange     '0.2.6',
+161 silly addNameRange     '0.2.7',
+161 silly addNameRange     '0.2.8',
+161 silly addNameRange     '0.2.9' ] ]
+162 silly addNamed node-schedule@0.2.9
+163 verbose addNamed "0.2.9" is a plain semver version for node-schedule
+164 silly cache afterAdd node-schedule@0.2.9
+165 verbose afterAdd /Users/pandres95/.npm/node-schedule/0.2.9/package/package.json not in flight; writing
+166 verbose afterAdd /Users/pandres95/.npm/node-schedule/0.2.9/package/package.json written
+167 silly install resolved [ { name: 'commander',
+167 silly install resolved     version: '2.9.0',
+167 silly install resolved     description: 'the complete solution for node.js command-line programs',
+167 silly install resolved     keywords: [ 'command', 'option', 'parser' ],
+167 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+167 silly install resolved     license: 'MIT',
+167 silly install resolved     repository:
+167 silly install resolved      { type: 'git',
+167 silly install resolved        url: 'git+https://github.com/tj/commander.js.git' },
+167 silly install resolved     devDependencies: { should: '>= 0.0.1', sinon: '>=1.17.1' },
+167 silly install resolved     scripts: { test: 'make test' },
+167 silly install resolved     main: 'index',
+167 silly install resolved     engines: { node: '>= 0.6.x' },
+167 silly install resolved     files: [ 'index.js' ],
+167 silly install resolved     dependencies: { 'graceful-readlink': '>= 1.0.0' },
+167 silly install resolved     gitHead: 'b2aad7a8471d434593a85306aa73777a526e9f75',
+167 silly install resolved     bugs: { url: 'https://github.com/tj/commander.js/issues' },
+167 silly install resolved     homepage: 'https://github.com/tj/commander.js#readme',
+167 silly install resolved     _id: 'commander@2.9.0',
+167 silly install resolved     _shasum: '9c99094176e12240cb22d6c5146098400fe0f7d4',
+167 silly install resolved     _from: 'commander@>=2.9.0 <3.0.0',
+167 silly install resolved     _npmVersion: '2.11.3',
+167 silly install resolved     _nodeVersion: '0.12.7',
+167 silly install resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+167 silly install resolved     dist:
+167 silly install resolved      { shasum: '9c99094176e12240cb22d6c5146098400fe0f7d4',
+167 silly install resolved        tarball: 'http://registry.npmjs.org/commander/-/commander-2.9.0.tgz' },
+167 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+167 silly install resolved     directories: {},
+167 silly install resolved     _resolved: 'http://registry.npmjs.org/commander/-/commander-2.9.0.tgz',
+167 silly install resolved     readme: 'ERROR: No README data found!' },
+167 silly install resolved   { name: 'open',
+167 silly install resolved     version: '0.0.5',
+167 silly install resolved     description: 'open a file or url in the user\'s preferred application',
+167 silly install resolved     keywords: [ 'start', 'open', 'browser', 'editor', 'default' ],
+167 silly install resolved     homepage: 'https://github.com/jjrdn/node-open',
+167 silly install resolved     author: { name: 'J Jordan', email: 'jjrdn@styosis.com' },
+167 silly install resolved     license: 'MIT',
+167 silly install resolved     contributors: [ [Object] ],
+167 silly install resolved     repository:
+167 silly install resolved      { type: 'git',
+167 silly install resolved        url: 'git+https://github.com/pwnall/node-open.git' },
+167 silly install resolved     bugs: { url: 'https://github.com/pwnall/node-open/issues' },
+167 silly install resolved     engines: { node: '>= 0.6.0' },
+167 silly install resolved     dependencies: {},
+167 silly install resolved     devDependencies: { mocha: '*' },
+167 silly install resolved     optionalDependencies: {},
+167 silly install resolved     main: 'lib/open.js',
+167 silly install resolved     scripts: { test: 'node_modules/mocha/bin/mocha' },
+167 silly install resolved     _id: 'open@0.0.5',
+167 silly install resolved     dist:
+167 silly install resolved      { shasum: '42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc',
+167 silly install resolved        tarball: 'http://registry.npmjs.org/open/-/open-0.0.5.tgz' },
+167 silly install resolved     _from: 'open@0.0.5',
+167 silly install resolved     _npmVersion: '1.4.3',
+167 silly install resolved     _npmUser: { name: 'pwnall', email: 'costan@gmail.com' },
+167 silly install resolved     maintainers: [ [Object], [Object] ],
+167 silly install resolved     directories: {},
+167 silly install resolved     _shasum: '42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc',
+167 silly install resolved     _resolved: 'http://registry.npmjs.org/open/-/open-0.0.5.tgz',
+167 silly install resolved     readme: 'ERROR: No README data found!' },
+167 silly install resolved   { name: 'daemon',
+167 silly install resolved     version: '1.1.0',
+167 silly install resolved     description: 'Add-on for creating *nix daemons',
+167 silly install resolved     author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+167 silly install resolved     contributors:
+167 silly install resolved      [ [Object],
+167 silly install resolved        [Object],
+167 silly install resolved        [Object],
+167 silly install resolved        [Object],
+167 silly install resolved        [Object],
+167 silly install resolved        [Object],
+167 silly install resolved        [Object],
+167 silly install resolved        [Object] ],
+167 silly install resolved     repository:
+167 silly install resolved      { type: 'git',
+167 silly install resolved        url: 'git+ssh://git@github.com/indexzero/daemon.node.git' },
+167 silly install resolved     scripts: { test: 'mocha --ui qunit test/*.js' },
+167 silly install resolved     devDependencies: { mocha: '1.8.1', after: '0.6.0' },
+167 silly install resolved     main: './index.js',
+167 silly install resolved     engines: { node: '>= 0.8.0' },
+167 silly install resolved     _id: 'daemon@1.1.0',
+167 silly install resolved     dist:
+167 silly install resolved      { shasum: '6c5102c81db0be856fc9008fc2c935b398864ae8',
+167 silly install resolved        tarball: 'http://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz' },
+167 silly install resolved     _from: 'daemon@>=1.1.0 <2.0.0',
+167 silly install resolved     _npmVersion: '1.2.14',
+167 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+167 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+167 silly install resolved     directories: {},
+167 silly install resolved     _shasum: '6c5102c81db0be856fc9008fc2c935b398864ae8',
+167 silly install resolved     _resolved: 'http://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz',
+167 silly install resolved     bugs: { url: 'https://github.com/indexzero/daemon.node/issues' },
+167 silly install resolved     readme: 'ERROR: No README data found!',
+167 silly install resolved     homepage: 'https://github.com/indexzero/daemon.node#readme' },
+167 silly install resolved   { name: 'node-schedule',
+167 silly install resolved     version: '0.2.9',
+167 silly install resolved     description: 'A cron-like and not-cron-like job scheduler for Node.',
+167 silly install resolved     keywords: [ 'schedule', 'task', 'job', 'cron' ],
+167 silly install resolved     main: './lib/schedule.js',
+167 silly install resolved     scripts: { test: 'nodeunit test', lint: 'eslint lib' },
+167 silly install resolved     author:
+167 silly install resolved      { name: 'Matt Patenaude',
+167 silly install resolved        email: 'matt@mattpatenaude.com',
+167 silly install resolved        url: 'http://mattpatenaude.com' },
+167 silly install resolved     repository:
+167 silly install resolved      { type: 'git',
+167 silly install resolved        url: 'git+https://github.com/tejasmanohar/node-schedule.git' },
+167 silly install resolved     dependencies: { 'cron-parser': '0.6.2', 'long-timeout': '0.0.2' },
+167 silly install resolved     devDependencies:
+167 silly install resolved      { coveralls: '^2.11.2',
+167 silly install resolved        eslint: '^0.15.1',
+167 silly install resolved        istanbul: '^0.3.8',
+167 silly install resolved        nodeunit: '^0.9.1',
+167 silly install resolved        sinon: '^1.14.1' },
+167 silly install resolved     gitHead: '2fa0b81acca05314f4c2afd3791546386f7a782c',
+167 silly install resolved     bugs: { url: 'https://github.com/tejasmanohar/node-schedule/issues' },
+167 silly install resolved     homepage: 'https://github.com/tejasmanohar/node-schedule#readme',
+167 silly install resolved     _id: 'node-schedule@0.2.9',
+167 silly install resolved     _shasum: '51df743dfe87485d91141287d49c851ed058f8e5',
+167 silly install resolved     _from: 'node-schedule@>=0.2.9 <0.3.0',
+167 silly install resolved     _npmVersion: '2.8.3',
+167 silly install resolved     _nodeVersion: '1.8.1',
+167 silly install resolved     _npmUser: { name: 'tejasmanohar', email: 'me@tejas.io' },
+167 silly install resolved     dist:
+167 silly install resolved      { shasum: '51df743dfe87485d91141287d49c851ed058f8e5',
+167 silly install resolved        tarball: 'http://registry.npmjs.org/node-schedule/-/node-schedule-0.2.9.tgz' },
+167 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+167 silly install resolved     directories: {},
+167 silly install resolved     _resolved: 'http://registry.npmjs.org/node-schedule/-/node-schedule-0.2.9.tgz',
+167 silly install resolved     readme: 'ERROR: No README data found!' } ]
+168 info install commander@2.9.0 into /usr/local/lib/node_modules/wakeme-up
+169 info install open@0.0.5 into /usr/local/lib/node_modules/wakeme-up
+170 info install daemon@1.1.0 into /usr/local/lib/node_modules/wakeme-up
+171 info install node-schedule@0.2.9 into /usr/local/lib/node_modules/wakeme-up
+172 info installOne commander@2.9.0
+173 verbose installOne of commander to /usr/local/lib/node_modules/wakeme-up not in flight; installing
+174 info installOne open@0.0.5
+175 verbose installOne of open to /usr/local/lib/node_modules/wakeme-up not in flight; installing
+176 info installOne daemon@1.1.0
+177 verbose installOne of daemon to /usr/local/lib/node_modules/wakeme-up not in flight; installing
+178 info installOne node-schedule@0.2.9
+179 verbose installOne of node-schedule to /usr/local/lib/node_modules/wakeme-up not in flight; installing
+180 verbose lock using /Users/pandres95/.npm/_locks/commander-b2586f729580daf4.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+181 verbose lock using /Users/pandres95/.npm/_locks/open-84dc76b0f451fde7.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/open
+182 verbose lock using /Users/pandres95/.npm/_locks/daemon-3daa327d57a70941.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+183 verbose lock using /Users/pandres95/.npm/_locks/node-schedule-1c9e7a1828aeb9fb.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+184 silly install write writing commander 2.9.0 to /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+185 silly install write writing open 0.0.5 to /usr/local/lib/node_modules/wakeme-up/node_modules/open
+186 silly install write writing daemon 1.1.0 to /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+187 silly install write writing node-schedule 0.2.9 to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+188 verbose unbuild lib/node_modules/wakeme-up/node_modules/commander
+189 verbose unbuild lib/node_modules/wakeme-up/node_modules/open
+190 verbose unbuild lib/node_modules/wakeme-up/node_modules/daemon
+191 verbose unbuild lib/node_modules/wakeme-up/node_modules/node-schedule
+192 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/commander is being purged from base /usr/local
+193 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+194 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/open is being purged from base /usr/local
+195 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/open
+196 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/daemon is being purged from base /usr/local
+197 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+198 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule is being purged from base /usr/local
+199 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+200 verbose tar unpack /Users/pandres95/.npm/commander/2.9.0/package.tgz
+201 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+202 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/commander is being purged
+203 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+204 verbose tar unpack /Users/pandres95/.npm/open/0.0.5/package.tgz
+205 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/open
+206 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/open is being purged
+207 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/open
+208 verbose tar unpack /Users/pandres95/.npm/daemon/1.1.0/package.tgz
+209 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+210 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/daemon is being purged
+211 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+212 verbose tar unpack /Users/pandres95/.npm/node-schedule/0.2.9/package.tgz
+213 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+214 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule is being purged
+215 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+216 silly gunzTarPerm modes [ '755', '644' ]
+217 silly gunzTarPerm modes [ '755', '644' ]
+218 silly gunzTarPerm modes [ '755', '644' ]
+219 silly gunzTarPerm modes [ '755', '644' ]
+220 silly gunzTarPerm extractEntry package.json
+221 silly gunzTarPerm extractEntry package.json
+222 silly gunzTarPerm extractEntry package.json
+223 silly gunzTarPerm extractEntry LICENSE
+224 silly gunzTarPerm extractEntry index.js
+225 silly gunzTarPerm extractEntry .npmignore
+226 silly gunzTarPerm extractEntry README.md
+227 silly gunzTarPerm extractEntry .npmignore
+228 silly gunzTarPerm extractEntry README.md
+229 silly gunzTarPerm extractEntry LICENSE
+230 silly gunzTarPerm extractEntry .jshintignore
+231 silly gunzTarPerm extractEntry Readme.md
+232 silly gunzTarPerm extractEntry LICENSE
+233 silly gunzTarPerm extractEntry .eslintrc
+234 silly gunzTarPerm extractEntry package.json
+235 silly gunzTarPerm extractEntry .travis.yml
+236 silly gunzTarPerm extractEntry lib/increment.js
+237 silly gunzTarPerm extractEntry .jshintrc
+238 silly gunzTarPerm extractEntry lib/open.js
+239 silly gunzTarPerm extractEntry .npmignore
+240 silly gunzTarPerm extractEntry README.md
+241 silly gunzTarPerm extractEntry History.md
+242 silly gunzTarPerm extractEntry vendor/xdg-open
+243 silly gunzTarPerm extractEntry LICENSE
+244 silly gunzTarPerm extractEntry index.js
+245 silly gunzTarPerm extractEntry lib/schedule.js
+246 silly gunzTarPerm extractEntry test/convenience-method-test.js
+247 silly gunzTarPerm extractEntry test/date-convenience-methods-test.js
+248 silly gunzTarPerm extractEntry test/job-test.js
+249 silly gunzTarPerm extractEntry test/range-test.js
+250 silly gunzTarPerm extractEntry test/recurrence-rule-test.js
+251 silly gunzTarPerm extractEntry test/schedule-cron-jobs.js
+252 silly gunzTarPerm extractEntry .travis.yml
+253 silly gunzTarPerm extractEntry examples/cluster.js
+254 silly gunzTarPerm extractEntry test/daemon-test.js
+255 silly gunzTarPerm extractEntry test/fixtures/nodaemon.js
+256 silly gunzTarPerm extractEntry test/fixtures/simple.js
+257 silly gunzTarPerm extractEntry test/fixtures/.gitkeep
+258 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/open/package.json
+259 info preinstall open@0.0.5
+260 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/open/package.json
+261 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/commander/package.json
+262 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/daemon/package.json
+263 info preinstall commander@2.9.0
+264 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/open/package.json
+265 info preinstall daemon@1.1.0
+266 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/commander/package.json
+267 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/daemon/package.json
+268 silly install resolved []
+269 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/open
+270 info build /usr/local/lib/node_modules/wakeme-up/node_modules/open
+271 silly prepareForInstallMany adding graceful-readlink@>= 1.0.0 from commander dependencies
+272 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/commander/package.json
+273 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/daemon/package.json
+274 info linkStuff open@0.0.5
+275 silly linkStuff open@0.0.5 has /usr/local/lib/node_modules/wakeme-up/node_modules as its parent node_modules
+276 silly linkStuff open@0.0.5 is part of a global install
+277 silly linkStuff open@0.0.5 is installed into a global node_modules
+278 silly cache add args [ 'graceful-readlink@>= 1.0.0', null ]
+279 verbose cache add spec graceful-readlink@>= 1.0.0
+280 silly cache add parsed spec Result {
+280 silly cache add   raw: 'graceful-readlink@>= 1.0.0',
+280 silly cache add   scope: null,
+280 silly cache add   name: 'graceful-readlink',
+280 silly cache add   rawSpec: '>= 1.0.0',
+280 silly cache add   spec: '>=1.0.0',
+280 silly cache add   type: 'range' }
+281 silly addNamed graceful-readlink@>=1.0.0
+282 verbose addNamed ">=1.0.0" is a valid semver range for graceful-readlink
+283 silly addNameRange { name: 'graceful-readlink', range: '>=1.0.0', hasData: false }
+284 silly mapToRegistry name graceful-readlink
+285 silly mapToRegistry using default registry
+286 silly mapToRegistry registry http://registry.npmjs.org/
+287 silly mapToRegistry uri http://registry.npmjs.org/graceful-readlink
+288 verbose addNameRange registry:http://registry.npmjs.org/graceful-readlink not in flight; fetching
+289 silly install resolved []
+290 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+291 info build /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+292 info linkStuff daemon@1.1.0
+293 silly linkStuff daemon@1.1.0 has /usr/local/lib/node_modules/wakeme-up/node_modules as its parent node_modules
+294 silly linkStuff daemon@1.1.0 is part of a global install
+295 silly linkStuff daemon@1.1.0 is installed into a global node_modules
+296 verbose linkBins open@0.0.5
+297 verbose linkMans open@0.0.5
+298 verbose rebuildBundles open@0.0.5
+299 info install open@0.0.5
+300 info postinstall open@0.0.5
+301 verbose unlock done using /Users/pandres95/.npm/_locks/open-84dc76b0f451fde7.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/open
+302 verbose linkBins daemon@1.1.0
+303 verbose linkMans daemon@1.1.0
+304 verbose rebuildBundles daemon@1.1.0
+305 info install daemon@1.1.0
+306 info postinstall daemon@1.1.0
+307 verbose unlock done using /Users/pandres95/.npm/_locks/daemon-3daa327d57a70941.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/daemon
+308 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/package.json
+309 verbose request uri http://registry.npmjs.org/graceful-readlink
+310 verbose request no auth needed
+311 info attempt registry request try #1 at 2:54:40 AM
+312 verbose request using bearer token for auth
+313 verbose etag "54BPOELEHDUPND7Q6GUE15GT"
+314 http request GET http://registry.npmjs.org/graceful-readlink
+315 info preinstall node-schedule@0.2.9
+316 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/package.json
+317 silly prepareForInstallMany adding cron-parser@0.6.2 from node-schedule dependencies
+318 silly prepareForInstallMany adding long-timeout@0.0.2 from node-schedule dependencies
+319 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/package.json
+320 silly cache add args [ 'cron-parser@0.6.2', null ]
+321 verbose cache add spec cron-parser@0.6.2
+322 silly cache add args [ 'long-timeout@0.0.2', null ]
+323 verbose cache add spec long-timeout@0.0.2
+324 silly cache add parsed spec Result {
+324 silly cache add   raw: 'cron-parser@0.6.2',
+324 silly cache add   scope: null,
+324 silly cache add   name: 'cron-parser',
+324 silly cache add   rawSpec: '0.6.2',
+324 silly cache add   spec: '0.6.2',
+324 silly cache add   type: 'version' }
+325 silly addNamed cron-parser@0.6.2
+326 verbose addNamed "0.6.2" is a plain semver version for cron-parser
+327 silly mapToRegistry name cron-parser
+328 silly mapToRegistry using default registry
+329 silly mapToRegistry registry http://registry.npmjs.org/
+330 silly mapToRegistry uri http://registry.npmjs.org/cron-parser
+331 verbose addNameVersion registry:http://registry.npmjs.org/cron-parser not in flight; fetching
+332 silly cache add parsed spec Result {
+332 silly cache add   raw: 'long-timeout@0.0.2',
+332 silly cache add   scope: null,
+332 silly cache add   name: 'long-timeout',
+332 silly cache add   rawSpec: '0.0.2',
+332 silly cache add   spec: '0.0.2',
+332 silly cache add   type: 'version' }
+333 silly addNamed long-timeout@0.0.2
+334 verbose addNamed "0.0.2" is a plain semver version for long-timeout
+335 silly mapToRegistry name long-timeout
+336 silly mapToRegistry using default registry
+337 silly mapToRegistry registry http://registry.npmjs.org/
+338 silly mapToRegistry uri http://registry.npmjs.org/long-timeout
+339 verbose addNameVersion registry:http://registry.npmjs.org/long-timeout not in flight; fetching
+340 verbose request uri http://registry.npmjs.org/long-timeout
+341 verbose request no auth needed
+342 info attempt registry request try #1 at 2:54:40 AM
+343 verbose request using bearer token for auth
+344 verbose etag "1O48KTJY8EJB68LSNTROYVKVO"
+345 http request GET http://registry.npmjs.org/long-timeout
+346 verbose request uri http://registry.npmjs.org/cron-parser
+347 verbose request no auth needed
+348 info attempt registry request try #1 at 2:54:40 AM
+349 verbose request using bearer token for auth
+350 verbose etag "4DNQQMED3MUR2ZEFZJK6Y2O1N"
+351 http request GET http://registry.npmjs.org/cron-parser
+352 http 304 http://registry.npmjs.org/graceful-readlink
+353 silly get cb [ 304,
+353 silly get   { 'cache-control': 'max-age=60',
+353 silly get     'accept-ranges': 'bytes',
+353 silly get     date: 'Fri, 16 Oct 2015 07:54:40 GMT',
+353 silly get     via: '1.1 varnish',
+353 silly get     connection: 'keep-alive',
+353 silly get     'x-served-by': 'cache-sjc3129-SJC',
+353 silly get     'x-cache': 'MISS',
+353 silly get     'x-cache-hits': '0',
+353 silly get     'x-timer': 'S1444982080.711322,VS0,VE84' } ]
+354 verbose etag http://registry.npmjs.org/graceful-readlink from cache
+355 verbose get saving graceful-readlink to /Users/pandres95/.npm/registry.npmjs.org/graceful-readlink/.cache.json
+356 silly addNameRange number 2 { name: 'graceful-readlink', range: '>=1.0.0', hasData: true }
+357 silly addNameRange versions [ 'graceful-readlink', [ '1.0.0', '1.0.1' ] ]
+358 silly addNamed graceful-readlink@1.0.1
+359 verbose addNamed "1.0.1" is a plain semver version for graceful-readlink
+360 silly cache afterAdd graceful-readlink@1.0.1
+361 verbose afterAdd /Users/pandres95/.npm/graceful-readlink/1.0.1/package/package.json not in flight; writing
+362 verbose afterAdd /Users/pandres95/.npm/graceful-readlink/1.0.1/package/package.json written
+363 silly install resolved [ { name: 'graceful-readlink',
+363 silly install resolved     version: '1.0.1',
+363 silly install resolved     description: 'graceful fs.readlink',
+363 silly install resolved     main: 'index.js',
+363 silly install resolved     repository:
+363 silly install resolved      { type: 'git',
+363 silly install resolved        url: 'git://github.com/zhiyelee/graceful-readlink.git' },
+363 silly install resolved     homepage: 'https://github.com/zhiyelee/graceful-readlink',
+363 silly install resolved     bugs: { url: 'https://github.com/zhiyelee/graceful-readlink/issues' },
+363 silly install resolved     keywords: [ 'fs.readlink', 'readlink' ],
+363 silly install resolved     author: { name: 'zhiyelee' },
+363 silly install resolved     license: 'MIT',
+363 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+363 silly install resolved     gitHead: 'f6655275bebef706fb63fd01b5f062a7052419a5',
+363 silly install resolved     _id: 'graceful-readlink@1.0.1',
+363 silly install resolved     _shasum: '4cafad76bc62f02fa039b2f94e9a3dd3a391a725',
+363 silly install resolved     _from: 'graceful-readlink@>=1.0.0',
+363 silly install resolved     _npmVersion: '2.1.17',
+363 silly install resolved     _nodeVersion: '0.11.14',
+363 silly install resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+363 silly install resolved     maintainers: [ [Object] ],
+363 silly install resolved     dist:
+363 silly install resolved      { shasum: '4cafad76bc62f02fa039b2f94e9a3dd3a391a725',
+363 silly install resolved        tarball: 'http://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz' },
+363 silly install resolved     directories: {},
+363 silly install resolved     _resolved: 'http://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz',
+363 silly install resolved     readme: 'ERROR: No README data found!' } ]
+364 info install graceful-readlink@1.0.1 into /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+365 info installOne graceful-readlink@1.0.1
+366 verbose installOne of graceful-readlink to /usr/local/lib/node_modules/wakeme-up/node_modules/commander not in flight; installing
+367 verbose lock using /Users/pandres95/.npm/_locks/graceful-readlink-c944fe237435e384.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+368 silly install write writing graceful-readlink 1.0.1 to /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+369 verbose unbuild lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+370 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink is being purged from base /usr/local
+371 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+372 verbose tar unpack /Users/pandres95/.npm/graceful-readlink/1.0.1/package.tgz
+373 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+374 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink is being purged
+375 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+376 silly gunzTarPerm modes [ '755', '644' ]
+377 http 304 http://registry.npmjs.org/cron-parser
+378 silly get cb [ 304,
+378 silly get   { 'cache-control': 'max-age=60',
+378 silly get     'accept-ranges': 'bytes',
+378 silly get     date: 'Fri, 16 Oct 2015 07:54:40 GMT',
+378 silly get     via: '1.1 varnish',
+378 silly get     connection: 'keep-alive',
+378 silly get     'x-served-by': 'cache-sjc3128-SJC',
+378 silly get     'x-cache': 'MISS',
+378 silly get     'x-cache-hits': '0',
+378 silly get     'x-timer': 'S1444982080.801375,VS0,VE85' } ]
+379 verbose etag http://registry.npmjs.org/cron-parser from cache
+380 verbose get saving cron-parser to /Users/pandres95/.npm/registry.npmjs.org/cron-parser/.cache.json
+381 silly gunzTarPerm extractEntry package.json
+382 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+383 silly gunzTarPerm extractEntry .npmignore
+384 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+385 silly gunzTarPerm extractEntry README.md
+386 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+387 silly gunzTarPerm extractEntry LICENSE
+388 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+389 silly gunzTarPerm extractEntry index.js
+390 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+391 silly gunzTarPerm extractEntry .travis.yml
+392 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+393 silly cache afterAdd cron-parser@0.6.2
+394 verbose afterAdd /Users/pandres95/.npm/cron-parser/0.6.2/package/package.json not in flight; writing
+395 verbose afterAdd /Users/pandres95/.npm/cron-parser/0.6.2/package/package.json written
+396 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink/package.json
+397 info preinstall graceful-readlink@1.0.1
+398 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink/package.json
+399 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink/package.json
+400 silly install resolved []
+401 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+402 info build /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+403 info linkStuff graceful-readlink@1.0.1
+404 silly linkStuff graceful-readlink@1.0.1 has /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules as its parent node_modules
+405 silly linkStuff graceful-readlink@1.0.1 is part of a global install
+406 silly linkStuff graceful-readlink@1.0.1 is installed into a global node_modules
+407 verbose linkBins graceful-readlink@1.0.1
+408 verbose linkMans graceful-readlink@1.0.1
+409 verbose rebuildBundles graceful-readlink@1.0.1
+410 info install graceful-readlink@1.0.1
+411 info postinstall graceful-readlink@1.0.1
+412 verbose unlock done using /Users/pandres95/.npm/_locks/graceful-readlink-c944fe237435e384.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/commander/node_modules/graceful-readlink
+413 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+414 info build /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+415 info linkStuff commander@2.9.0
+416 silly linkStuff commander@2.9.0 has /usr/local/lib/node_modules/wakeme-up/node_modules as its parent node_modules
+417 silly linkStuff commander@2.9.0 is part of a global install
+418 silly linkStuff commander@2.9.0 is installed into a global node_modules
+419 verbose linkBins commander@2.9.0
+420 verbose linkMans commander@2.9.0
+421 verbose rebuildBundles commander@2.9.0
+422 verbose rebuildBundles [ 'graceful-readlink' ]
+423 info install commander@2.9.0
+424 info postinstall commander@2.9.0
+425 verbose unlock done using /Users/pandres95/.npm/_locks/commander-b2586f729580daf4.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/commander
+426 http 304 http://registry.npmjs.org/long-timeout
+427 silly get cb [ 304,
+427 silly get   { 'cache-control': 'max-age=60',
+427 silly get     'accept-ranges': 'bytes',
+427 silly get     date: 'Fri, 16 Oct 2015 07:54:41 GMT',
+427 silly get     via: '1.1 varnish',
+427 silly get     connection: 'keep-alive',
+427 silly get     'x-served-by': 'cache-sjc3129-SJC',
+427 silly get     'x-cache': 'MISS',
+427 silly get     'x-cache-hits': '0',
+427 silly get     'x-timer': 'S1444982080.757918,VS0,VE343' } ]
+428 verbose etag http://registry.npmjs.org/long-timeout from cache
+429 verbose get saving long-timeout to /Users/pandres95/.npm/registry.npmjs.org/long-timeout/.cache.json
+430 silly cache afterAdd long-timeout@0.0.2
+431 verbose afterAdd /Users/pandres95/.npm/long-timeout/0.0.2/package/package.json not in flight; writing
+432 verbose afterAdd /Users/pandres95/.npm/long-timeout/0.0.2/package/package.json written
+433 silly install resolved [ { name: 'cron-parser',
+433 silly install resolved     version: '0.6.2',
+433 silly install resolved     description: 'Node.js library for parsing crontab instructions',
+433 silly install resolved     main: 'lib/parser.js',
+433 silly install resolved     directories: { test: 'test' },
+433 silly install resolved     scripts: { test: 'tap ./test/*.js' },
+433 silly install resolved     repository:
+433 silly install resolved      { type: 'git',
+433 silly install resolved        url: 'git+ssh://git@github.com/harrisiirak/cron-parser.git' },
+433 silly install resolved     keywords: [ 'cron', 'crontab', 'parser' ],
+433 silly install resolved     author: { name: 'Harri Siirak' },
+433 silly install resolved     contributors:
+433 silly install resolved      [ [Object],
+433 silly install resolved        [Object],
+433 silly install resolved        [Object],
+433 silly install resolved        [Object],
+433 silly install resolved        [Object],
+433 silly install resolved        [Object],
+433 silly install resolved        [Object] ],
+433 silly install resolved     license: 'MIT',
+433 silly install resolved     devDependencies: { tap: '^0.5.0' },
+433 silly install resolved     engines: { node: '>=0.8' },
+433 silly install resolved     gitHead: '7db7282efdef4e8b07038f9becf2a42b64b830fc',
+433 silly install resolved     bugs: { url: 'https://github.com/harrisiirak/cron-parser/issues' },
+433 silly install resolved     homepage: 'https://github.com/harrisiirak/cron-parser#readme',
+433 silly install resolved     _id: 'cron-parser@0.6.2',
+433 silly install resolved     _shasum: 'ee6e35b1897ad831c065c6026b57c8d8bf89131f',
+433 silly install resolved     _from: 'cron-parser@0.6.2',
+433 silly install resolved     _npmVersion: '2.9.0',
+433 silly install resolved     _nodeVersion: '0.12.2',
+433 silly install resolved     _npmUser: { name: 'harrisiirak', email: 'harri.siirak@gmail.com' },
+433 silly install resolved     maintainers: [ [Object] ],
+433 silly install resolved     dist:
+433 silly install resolved      { shasum: 'ee6e35b1897ad831c065c6026b57c8d8bf89131f',
+433 silly install resolved        tarball: 'http://registry.npmjs.org/cron-parser/-/cron-parser-0.6.2.tgz' },
+433 silly install resolved     _resolved: 'http://registry.npmjs.org/cron-parser/-/cron-parser-0.6.2.tgz',
+433 silly install resolved     readme: 'ERROR: No README data found!' },
+433 silly install resolved   { name: 'long-timeout',
+433 silly install resolved     version: '0.0.2',
+433 silly install resolved     description: 'Long timeout makes it possible to have a timeout that is longer than 24.8 days (2^31-1 milliseconds).',
+433 silly install resolved     main: 'index.js',
+433 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+433 silly install resolved     repository:
+433 silly install resolved      { type: 'git',
+433 silly install resolved        url: 'git://github.com/tellnes/long-timeout.git' },
+433 silly install resolved     author:
+433 silly install resolved      { name: 'Christian Tellnes',
+433 silly install resolved        email: 'christian@tellnes.no',
+433 silly install resolved        url: 'http://christian.tellnes.com/' },
+433 silly install resolved     license: 'MIT',
+433 silly install resolved     bugs: { url: 'https://github.com/tellnes/long-timeout/issues' },
+433 silly install resolved     homepage: 'https://github.com/tellnes/long-timeout',
+433 silly install resolved     publishConfig: { registry: 'https://registry.npmjs.org/' },
+433 silly install resolved     gitHead: '41ee160fd3a1f8d34fbde2cb96617f79e217b31d',
+433 silly install resolved     _id: 'long-timeout@0.0.2',
+433 silly install resolved     _shasum: 'f36449ba89629d13a7a2b2523a4db9dd66e3ff68',
+433 silly install resolved     _from: 'long-timeout@0.0.2',
+433 silly install resolved     _npmVersion: '1.4.28',
+433 silly install resolved     _npmUser: { name: 'tellnes', email: 'christian@tellnes.no' },
+433 silly install resolved     maintainers: [ [Object] ],
+433 silly install resolved     dist:
+433 silly install resolved      { shasum: 'f36449ba89629d13a7a2b2523a4db9dd66e3ff68',
+433 silly install resolved        tarball: 'http://registry.npmjs.org/long-timeout/-/long-timeout-0.0.2.tgz' },
+433 silly install resolved     directories: {},
+433 silly install resolved     _resolved: 'http://registry.npmjs.org/long-timeout/-/long-timeout-0.0.2.tgz',
+433 silly install resolved     readme: 'ERROR: No README data found!' } ]
+434 info install cron-parser@0.6.2 into /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+435 info install long-timeout@0.0.2 into /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+436 info installOne cron-parser@0.6.2
+437 verbose installOne of cron-parser to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule not in flight; installing
+438 info installOne long-timeout@0.0.2
+439 verbose installOne of long-timeout to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule not in flight; installing
+440 verbose lock using /Users/pandres95/.npm/_locks/cron-parser-9963f6ad61130ca2.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+441 verbose lock using /Users/pandres95/.npm/_locks/long-timeout-9da2e0813d36cbd8.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+442 silly install write writing cron-parser 0.6.2 to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+443 silly install write writing long-timeout 0.0.2 to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+444 verbose unbuild lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+445 verbose unbuild lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+446 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser is being purged from base /usr/local
+447 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+448 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout is being purged from base /usr/local
+449 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+450 verbose tar unpack /Users/pandres95/.npm/cron-parser/0.6.2/package.tgz
+451 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+452 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser is being purged
+453 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+454 verbose tar unpack /Users/pandres95/.npm/long-timeout/0.0.2/package.tgz
+455 verbose tar unpacking to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+456 silly gentlyRm /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout is being purged
+457 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+458 silly gunzTarPerm modes [ '755', '644' ]
+459 silly gunzTarPerm modes [ '755', '644' ]
+460 silly gunzTarPerm extractEntry package.json
+461 silly gunzTarPerm extractEntry .npmignore
+462 silly gunzTarPerm extractEntry README.md
+463 silly gunzTarPerm extractEntry test.js
+464 silly gunzTarPerm extractEntry .idea/libraries/cron_parser_node_modules.xml
+465 silly gunzTarPerm extractEntry .idea/.name
+466 silly gunzTarPerm extractEntry .idea/cron-parser.iml
+467 silly gunzTarPerm extractEntry .idea/encodings.xml
+468 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+469 silly gunzTarPerm extractEntry .idea/codeStyleSettings.xml
+470 silly gunzTarPerm extractEntry .idea/misc.xml
+471 silly gunzTarPerm extractEntry package.json
+472 silly gunzTarPerm extractEntry README.md
+473 silly gunzTarPerm extractEntry example.js
+474 silly gunzTarPerm extractEntry .idea/modules.xml
+475 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+476 silly gunzTarPerm extractEntry index.js
+477 silly gunzTarPerm extractEntry .idea/vcs.xml
+478 silly gunzTarPerm extractEntry .idea/workspace.xml
+479 silly gunzTarPerm extractEntry lib/date.js
+480 silly gunzTarPerm extractEntry lib/expression.js
+481 silly gunzTarPerm extractEntry lib/parser.js
+482 silly gunzTarPerm extractEntry test/expression.js
+483 silly gunzTarPerm extractEntry test/parser.js
+484 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout/package.json
+485 info preinstall long-timeout@0.0.2
+486 silly gunzTarPerm extractEntry test/crontab.example
+487 silly gunzTarPerm extractEntry .travis.yml
+488 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout/package.json
+489 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout/package.json
+490 silly gunzTarPerm extractEntry component.json
+491 silly install resolved []
+492 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+493 info build /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+494 info linkStuff long-timeout@0.0.2
+495 silly linkStuff long-timeout@0.0.2 has /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules as its parent node_modules
+496 silly linkStuff long-timeout@0.0.2 is part of a global install
+497 silly linkStuff long-timeout@0.0.2 is installed into a global node_modules
+498 verbose linkBins long-timeout@0.0.2
+499 verbose linkMans long-timeout@0.0.2
+500 verbose rebuildBundles long-timeout@0.0.2
+501 info install long-timeout@0.0.2
+502 info postinstall long-timeout@0.0.2
+503 verbose unlock done using /Users/pandres95/.npm/_locks/long-timeout-9da2e0813d36cbd8.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/long-timeout
+504 verbose write writing to /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser/package.json
+505 info preinstall cron-parser@0.6.2
+506 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser/package.json
+507 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser/package.json
+508 silly install resolved []
+509 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+510 info build /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+511 info linkStuff cron-parser@0.6.2
+512 silly linkStuff cron-parser@0.6.2 has /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules as its parent node_modules
+513 silly linkStuff cron-parser@0.6.2 is part of a global install
+514 silly linkStuff cron-parser@0.6.2 is installed into a global node_modules
+515 verbose linkBins cron-parser@0.6.2
+516 verbose linkMans cron-parser@0.6.2
+517 verbose rebuildBundles cron-parser@0.6.2
+518 info install cron-parser@0.6.2
+519 info postinstall cron-parser@0.6.2
+520 verbose unlock done using /Users/pandres95/.npm/_locks/cron-parser-9963f6ad61130ca2.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule/node_modules/cron-parser
+521 verbose about to build /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+522 info build /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+523 info linkStuff node-schedule@0.2.9
+524 silly linkStuff node-schedule@0.2.9 has /usr/local/lib/node_modules/wakeme-up/node_modules as its parent node_modules
+525 silly linkStuff node-schedule@0.2.9 is part of a global install
+526 silly linkStuff node-schedule@0.2.9 is installed into a global node_modules
+527 verbose linkBins node-schedule@0.2.9
+528 verbose linkMans node-schedule@0.2.9
+529 verbose rebuildBundles node-schedule@0.2.9
+530 verbose rebuildBundles [ 'cron-parser', 'long-timeout' ]
+531 info install node-schedule@0.2.9
+532 info postinstall node-schedule@0.2.9
+533 verbose unlock done using /Users/pandres95/.npm/_locks/node-schedule-1c9e7a1828aeb9fb.lock for /usr/local/lib/node_modules/wakeme-up/node_modules/node-schedule
+534 verbose about to build /usr/local/lib/node_modules/wakeme-up
+535 info build /usr/local/lib/node_modules/wakeme-up
+536 info linkStuff wakeme-up@1.0.1
+537 silly linkStuff wakeme-up@1.0.1 has /usr/local/lib/node_modules as its parent node_modules
+538 silly linkStuff wakeme-up@1.0.1 is part of a global install
+539 silly linkStuff wakeme-up@1.0.1 is installed into a global node_modules
+540 silly linkStuff wakeme-up@1.0.1 is installed into the top-level global node_modules
+541 verbose linkBins wakeme-up@1.0.1
+542 verbose link bins [ { wakeup: 'wakeup.js' }, '/usr/local/bin', true ]
+543 verbose linkMans wakeme-up@1.0.1
+544 verbose rebuildBundles wakeme-up@1.0.1
+545 verbose rebuildBundles [ 'commander', 'daemon', 'node-schedule', 'open' ]
+546 verbose unlock done using /Users/pandres95/.npm/_locks/wakeme-up-d45b5b8eaf32235b.lock for /usr/local/lib/node_modules/wakeme-up
+547 verbose stack Error: ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/wakeme-up/wakeup.js'
+547 verbose stack     at Error (native)
+548 verbose cwd /Users/pandres95/Documents/Development/Open Source Libraries/wakeme-up
+549 error Darwin 15.0.0
+550 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "-g" "wakeme-up"
+551 error node v4.0.0
+552 error npm  v2.14.3
+553 error path /usr/local/lib/node_modules/wakeme-up/wakeup.js
+554 error code ENOENT
+555 error errno -2
+556 error syscall chmod
+557 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/wakeme-up/wakeup.js'
+557 error enoent This is most likely not a problem with npm itself
+557 error enoent and is related to npm not being able to find a file.
+558 verbose exit [ -2, true ]
+559 verbose unbuild lib/node_modules/wakeme-up
+560 info preuninstall wakeme-up@1.0.1
+561 info uninstall wakeme-up@1.0.1
+562 verbose unbuild rmStuff wakeme-up@1.0.1 from /usr/local/lib/node_modules
+563 silly gentlyRm /usr/local/bin/wakeup is being gently removed
+564 silly gentlyRm verifying /usr/local is an npm working directory
+565 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+566 silly gentlyRm deletion target /usr/local/bin/wakeup is under /usr/local
+567 verbose gentlyRm vacuuming from /usr/local/bin/wakeup up to /usr/local
+568 info postuninstall wakeme-up@1.0.1
+569 silly gentlyRm /usr/local/lib/node_modules/wakeme-up is being purged from base /usr/local
+570 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/wakeme-up
+571 silly vacuum-fs purging /usr/local/lib/node_modules/wakeme-up
+572 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
