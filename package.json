@@ -1,0 +1,24 @@
+{
+  "name": "wakeme-up",
+  "version": "1.0.0",
+  "description": "Wakes you up with Radioacktiva",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "wakeup",
+    "cron",
+    "radio"
+  ],
+  "author": "Pablo Andrés Dorado Suárez <pandres95@gentebool.com>",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "daemon": "^1.1.0",
+    "node-schedule": "^0.2.9",
+    "open": "0.0.5"
+  },
+  "devDependencies": {},
+  "bin": {
+    "wakeme-up": "wakeup.js"
+  }
+}
